@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: hrm
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 0
+
+eureka:
+  client:
+    fetch-registry: false
+    eureka-server-port: 8761
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${random.int}
